@@ -1,0 +1,25 @@
+{
+  "name": "lambda-gitbot",
+  "version": "1.0.0",
+  "description": "Gitbot to do AWS codebuild",
+  "main": "index.js",
+  "scripts": {
+    "zipit": "zip -q -r package.zip *",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sothishs/lambda-gitbot.git"
+  },
+  "author": "Sothish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sothishs/lambda-gitbot/issues"
+  },
+  "homepage": "https://github.com/sothishs/lambda-gitbot#readme",
+  "dependencies": {
+    "aws-sdk": "^2.45.0",
+    "octonode": "^0.7.12",
+    "promise-retry": "^1.1.1"
+  }
+}

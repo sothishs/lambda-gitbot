@@ -11,7 +11,7 @@ exports.handler = (event, context, callback) => {
 
     // only for PR
     if (message.pull_request) {
-      console.log('\n\n === run build on Gitbot SNS === \n\n');
+      console.log('\n\n === Gitbot SNS === \n\n');
       build.run(message.after)
         .then(resp => {
           callback(null, resp);
@@ -25,7 +25,7 @@ exports.handler = (event, context, callback) => {
 
   } else {
 
-    console.log('\n\n === run build on Codebuild SNS === \n\n');
+    console.log('\n\n === Codebuild SNS === \n\n');
     result.run(message.buildId)
       .then(resp => {
         callback(null, resp);
